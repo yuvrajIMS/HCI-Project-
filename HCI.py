@@ -10,9 +10,9 @@ import matplotlib.pyplot as plt
 from math import hypot
 import time
 
-predictor = dlib.shape_predictor("/Users/yuvrajsingh/Documents/HCI/shape_predictor_68_face_landmarks.dat")
-weights =  "/Users/yuvrajsingh/Documents/HCI/res10_300x300_ssd_iter_140000_fp16.caffemodel"
-architecture = "/Users/yuvrajsingh/Documents/HCI/deploy.prototxt.txt"
+predictor = dlib.shape_predictor("PATH TO shape_predictor_68_face_landmarks.dat")
+weights =  "PATH TO res10_300x300_ssd_iter_140000_fp16.caffemodel"
+architecture = "PATH TO deploy.prototxt.txt"
 combi = cv2.dnn.readNetFromCaffe(architecture,weights)
 
 capture = cv2.VideoCapture(0)
